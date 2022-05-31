@@ -1,0 +1,89 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    width: 100%;
+    height:100%;
+}
+
+body {
+    width:100%;
+}
+
+#content {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    width:100%;
+    height:80%;
+}
+
+#logo {
+    height:20%;
+    width:auto;
+    margin-left:auto;
+    margin-right:auto;
+    display:block;
+}
+
+#band-list {
+    width: 15%;
+    font-family: 'Tiro Devanagari Sanskrit', serif;
+    font-size: 2em;
+    margin: 0em 1em 0em 1em;
+    list-style-type: none;
+}
+
+#band-list li {
+    margin: 1em 0em 1em 0em;
+}
+
+#band-image {
+    object-fit: cover;
+    width: 100%;
+    height:80%;
+}
+
+#band-details {
+    width:100%;
+    height:80%;
+    position: absolute;
+    background-color: #000000c0;
+    color: white;
+    top: 0;
+}
+
+#band-details h2 {
+    font-size: 6em;
+    margin: .25em;
+}
+
+#band-details h3 {
+    font-size: 4em;
+    margin: .25em;
+    bottom: 0;
+    position: inherit;
+}
+
+#band-details div {
+    margin:.75em;
+    font-size: 2em;
+    display:flex;
+    gap: .75em;
+}
+
+#band-details button {
+    font-size: 1em;
+    border-radius: 5px;
+    padding:0em .5em 0em .5em;
+}
+
+.detail-area {
+    width: 60%;
+    height:100%;
+    margin-top: 1em;
+    position: relative;
+}

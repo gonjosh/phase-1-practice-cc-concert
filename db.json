@@ -1,0 +1,60 @@
+{
+    "bands": [
+        {
+            "name": "Thrice",
+            "genre": "Post Hardcore",
+            "image": "https://media.lasvegasweekly.com/img/photos/2020/02/18/0220_Noise_Thrice_by-Dan-Monick_Courtesy_t1000.jpg?c76bf34eada957f64a0b14990027a576ff9bf379",
+            "capacity": 30,
+            "reserved": 29
+        },
+        {
+            "name": "Brand New",
+            "genre": "Indie Rock",
+            "image": "https://i.scdn.co/image/ab6761610000e5eb4d709a7f0c971c81aeeb6e75",
+            "capacity": 30,
+            "reserved": 27
+        },
+        {
+            "name": "The Mars Volta",
+            "genre": "Progressive Rock",
+            "image": "https://www.rollingstone.com/wp-content/uploads/2018/06/rs-180959-86114989.jpg",
+            "capacity": 30,
+            "reserved": 24
+        },
+        {
+            "name": "Bad Religion",
+            "genre": "Punk",
+            "image": "https://i0.wp.com/www.ambientlightblog.com/wp-content/uploads/2019/12/badreligion.jpg?fit=2048%2C1075&ssl=1",
+            "capacity": 30,
+            "reserved": 21
+        },
+        {
+            "name": "Touchê Amoré",
+            "genre": "Hardcore",
+            "image": "https://media.npr.org/assets/img/2011/12/07/toucheamore_brick-8d8a627f02abda2cad80127375cfaadb54ec1bc6.jpg",
+            "capacity": 30,
+            "reserved": 28
+        },
+        {
+            "name": "Bayside",
+            "genre": "Emo",
+            "image": "https://media.altpress.com/uploads/2018/06/Bayside-2014-2.jpg",
+            "capacity": 30,
+            "reserved": 24
+        },
+        {
+            "name": "Thursday",
+            "genre": "Screamo",
+            "image": "https://media.stubhubstatic.com/stubhub-catalog/d_defaultLogo.jpg/t_f-fs-0fv,q_auto:low,f_auto,c_fill,$w_750_mul_3,$h_416_mul_3/performer/404963/ch7nzruq0aseu6l3dkba",
+            "capacity": 30,
+            "reserved": 25
+        },
+        {
+            "name": "At The Drive In",
+            "genre": "Post Hardcore",
+            "image": "https://music.mxdwn.com/wp-content/uploads/2012/01/At-The-Drive-In-608x412-1280x720.jpg",
+            "capacity": 30,
+            "reserved": 29
+        }
+    ]
+}
