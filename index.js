@@ -18,9 +18,20 @@ function createPageInteractions(allBands){
         bandPic.setAttribute("src", firstBandData.image)
         bandGenre.textContent = firstBandData.genre
         remainingSpots.textContent = firstBandData.capacity - firstBandData.reserved
-
     }
-rednerFirstBand()
+    function createBandList(name){
+      const listItem = document.createElement("li");
+      const bandListContainer = document.querySelector('#band-list')
+      listItem.textContent = name
+      bandListContainer.append(listItem)
+    }
+
+    rednerFirstBand()
+    createBandList()
+    allBands.forEach(band => {
+        createBandList(band.name)
+
+    });
 }
 
 
