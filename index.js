@@ -19,21 +19,42 @@ function createPageInteractions(allBands){
         bandGenre.textContent = firstBandData.genre
         remainingSpots.textContent = firstBandData.capacity - firstBandData.reserved
     }
+    function rednerABand(band){
+        bandName.textContent = band.name
+        bandPic.setAttribute("src", band.image)
+        bandGenre.textContent = band.genre
+        remainingSpots.textContent = band.capacity - band.reserved
+    }
+
     function createBandList(name){
       const listItem = document.createElement("li");
-      const bandListContainer = document.querySelector('#band-list')
-      listItem.textContent = name
+      const bandListContainer = document.querySelector('#band-list');
+      listItem.textContent = name;
+      listItem.addEventListener('click',() => {
+        const itemFound = allBands.find(band => band.name === name);
+        rednerABand(itemFound)
+      })
       bandListContainer.append(listItem)
     }
 
+
+    function reserveTicket(){
+        const reserveButton = document.getElementById('reserve-button')
+        const remainingSpots = document.getElementById('remaining-spots')
+        reserveButton.addEventListener('click', event => {
+            const currentValue = parseInt(remainingSpots.textContent);
+            if (currentValue === 0) return
+            const newValue = currentValue - 1
+            remainingSpots.textContent = newValue
+        })
+    }
+
     rednerFirstBand()
-    createBandList()
     allBands.forEach(band => {
         createBandList(band.name)
-
     });
+    reserveTicket()
 }
-
 
 document.addEventListener('DOMContentLoaded', () => {
     getBandsData()
